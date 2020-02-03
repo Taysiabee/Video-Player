@@ -67,6 +67,13 @@ document.querySelector('.forward-15').addEventListener('click', function () {
 	videoElement.currentTime = currentTime += 15
 })
 
+	document.addEventListener("keydown" , function(event) {
+ 		if (event.keyCode == 27) {
+        videoElement.remove();
+       
+    }
+});
+
 
 
 
